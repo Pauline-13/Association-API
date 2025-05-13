@@ -1,6 +1,6 @@
 
-// Remplace cette URL par celle de ton API réelle
-const API_URL = "https://randomuser.me/api/?results=8"; // ou le lien que tu as reçu
+
+const API_URL = "https://randomuser.me/api/?results=20";
 
 fetch(API_URL)
   .then(response => {
@@ -13,11 +13,11 @@ fetch(API_URL)
     const donateurs = data.results;
     const section = document.querySelector("section");
 
-    // Supprimer les figures déjà présentes en dur dans le HTML
+ 
     section.innerHTML = "";
 
     donateurs.forEach(donateur => {
-      // Création de la carte
+   
       const figure = document.createElement("figure");
       // figure.classList.add("card_section");
 
@@ -36,11 +36,11 @@ fetch(API_URL)
       const p = document.createElement("p");
       // p.classList.add("amount_card");
 
-      // Montant aléatoire entre 10 et 100 €
-      const montant = (Math.random() * 90 + 10).toFixed(0);
+  
+      const montant = Math.floor(Math.random() * 90 + 10);
       p.textContent = `Montant : ${montant} €`;
 
-      // Assemblage
+
       figure.appendChild(h2Last);
       figure.appendChild(h2First);
       figure.appendChild(img);
@@ -51,3 +51,20 @@ fetch(API_URL)
   .catch(error => {
     console.error("Erreur :", error);
   });
+
+  // const filtres = document.querySelector(".filter_all_aside")
+  // filtres.addEventListener("click", function());
+
+  // const filtresHommes = document.querySelector(".filter_men_aside")
+  // filtresHommes.addEventListener("click", function());
+
+  // const filtresFemmes = document.querySelector(".filter_women_aside")
+  // filtresFemmes.addEventListener("click", function());
+
+  // const alphabet = document.querySelector(".filter_alphabetical-order_aside")
+  // alphabet.addEventListener("click", function());
+
+  // const somme = document.querySelector(".filter_amount_aside")
+  // somme.addEventListener("click", function());
+
+

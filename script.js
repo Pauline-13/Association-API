@@ -46,7 +46,7 @@ function afficherDonateurs(donateurs) {
     img.src = donateur.picture.large;
 
     const p = document.createElement("p");
-    p.textContent = `Montant : ${donateur.montant} €`;
+    p.textContent = `Don : ${donateur.montant} €`;
 
     figure.appendChild(h2Last);
     figure.appendChild(h2First);

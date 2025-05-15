@@ -187,12 +187,43 @@ section img {
 section p {
     margin-top: 11px;
     font-family: "Comic Neue";
+    font-family: "Shadows Into Light";
     font-size: 1.2rem;
-    padding: 5px 10px;
+    padding: 0px 10px;
     border-radius: 5px;
     color: #2C2627;
-    text-shadow: 2px 1px 5px #474142;
+    font-weight: bold;
+    animation: Effet 2s infinite;
 }
+
+@keyframes Effet {
+  0%   { color: #2C2627; }
+  50%  { color: #ffc506; }
+  100% { color: #2C2627; }
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+   height: 50px;
+}
+
+#texte_footer {
+  outline: 1px solid #2C2627;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  width: 100%;
+  color: #2C2627;
+  font-size: 12px;
+  background-color: #F8F3E6;
+  font-family: "Comic Neue";
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
 
 
 /*tablette*/
@@ -207,8 +238,6 @@ h1 {
 aside {
     width: 160px;
     height: 400px;
-    /* padding-top: 10px; */
-    /* margin: 0 10px 0 10px; */
 }
 
 aside h2 {
@@ -216,9 +245,7 @@ aside h2 {
 }
 
 button {
-    /* width: 70%; */
     margin: 10px;
-    /* padding: 5px; */
     padding: 0.5em;
     text-transform: none;
 }
@@ -231,13 +258,12 @@ section {
 }
 
 figure {
-    width: 200px;
+    width: 230px;
     height: 280px;
     margin: 0px;
 }
 
  .last-name_card {
-   /* padding-top: 10px; */
    font-size: 1.5rem;
 }
 
@@ -248,4 +274,57 @@ section img {
 section p {
     padding: 10px 10px;
 }
+}
+
+
+
+/*Téléphone*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+h1 {
+    height: 90px;
+    margin: 20px 0 40px 0;
+    font-size: 3rem;
+}
+
+aside {
+    width: 100px;
+    height: 400px;
+}
+
+aside h2 {
+    font-size: 2rem;
+}
+
+button {
+    width: 80%;
+    margin: 10px;
+    padding: 0.5em;
+    text-transform: none;
+}
+
+section {
+  width: 50%;
+    align-items: center;
+    margin: 0 12px 20px 0px;
+    padding: 20px 10px;
+}
+
+figure {
+    width: 220px;
+    height: 260px;
+    margin: 0px;
+}
+
+ .last-name_card {
+   font-size: 1.5rem;
+}
+
+section img {
+    width: 90px;
+}
+
+section p {
+    padding: 10px 10px;
+}  
 }

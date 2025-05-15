@@ -193,6 +193,7 @@ section p {
     border-radius: 5px;
     color: #2C2627;
     font-weight: bold;
+    text-align: center;
     animation: Effet 2s infinite;
 }
 
@@ -253,7 +254,7 @@ button {
 section {
   width: 50%;
     align-items: center;
-    margin: 0 12px 20px 0px;
+    margin: 0 12px 15px 0px;
     padding: 20px 10px;
 }
 
@@ -306,7 +307,7 @@ button {
 section {
   width: 50%;
     align-items: center;
-    margin: 0 12px 20px 0px;
+    margin: 0 12px 10px 0px;
     padding: 20px 10px;
 }
 
@@ -322,6 +323,7 @@ figure {
 
 section img {
     width: 90px;
+    margin: auto;
 }
 
 section p {
